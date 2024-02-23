@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+  grid-column: span 3;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-image: url(note2.jpg);
+  background-color: black;
+  width: 100%;
+  grid-column: span 3;
+}
+.note{
+  width: 25%;
+  margin: top 100;
+ 
+  
+  text-align: center;
+  grid-column: span 3;
+margin-left: 5%;
+}
+.title{
+  font-family: 'Times New Roman';
+  width: 200px;
+  height: 20px;
+  background: black;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-left: 20%;
+  margin-bottom: 1%;
+  
+}
+.body{
+  font-family: 'Times New Roman';
+  width: 300px;
+  height: 50px;
+  background: black;
+  border-radius: 10px;
+  border: 5px solid white;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-left: 15%;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+.main{
+  display:inline-table;
+
+}
+button{
+padding: 10px 5px;
+margin-left: 10px;
+width: 200px;
+height: 50px;
+color: black;
+font-weight: 700;
+border-radius: 0;
+text-transform: uppercase;
+margin: 80px 5px;
+margin-right: 27.56%;
+margin-top: 10px;
+overflow: hidden;
+position: relative;
+
+}
+button::before{
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg,transparent,#00fffc,transparent);
+  transform: translateX(-100%);
+  transition: 0.6s;
+  position: absolute;
+ 
+}
+button:hover{
+  background: transparent;
+  color: white;
+  box-shadow:  0 0 20px 5px #00fffc;
+
+}
+.remove{
+  margin-left: 27%;
+  background-color: white;
+  color: black;
+}
+.notes-list{
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+    flex-wrap: wrap;
+    
+
+}
+
