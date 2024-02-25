@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const storedNotes = JSON.parse(localStorage.getItem('notes'));
-    if (storedNotes) {
+    if (storedNotes && storedNotes.length > 0) {
       setNotes(storedNotes);
     }
   }, []);
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <AddNoteForm onAdd={addNote} />
       <div className='menu'>
-      <NotesList notes={notes} onRemove={removeNote} />
+        <NotesList notes={notes} onRemove={removeNote} />
       </div>
     </div>
   );
